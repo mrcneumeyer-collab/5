@@ -4,7 +4,7 @@ import psycopg2
 st.set_page_config(page_title="Add Student", page_icon="👤")
 
 def get_connection():
-    return psycopg2.connect(st.secrets["postgresql://retool:npg_omj1cFPK0ZYy@ep-young-hat-akluhhjl-pooler.c-3.us-west-2.retooldb.com/retool?sslmode=require"])
+    return psycopg2.connect(st.secrets["DB_URL"])
 
 st.title("👤 Add a New Student")
 
